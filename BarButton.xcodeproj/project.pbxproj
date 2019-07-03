@@ -14,6 +14,9 @@
 		CE13F7C22205DB110010517C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE13F7C02205DB110010517C /* LaunchScreen.storyboard */; };
 		CE13F7CD2205DB120010517C /* BarButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13F7CC2205DB120010517C /* BarButtonTests.swift */; };
 		CE13F7D82205DB120010517C /* BarButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13F7D72205DB120010517C /* BarButtonUITests.swift */; };
+		CE13F7E62205E0120010517C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13F7E52205E0120010517C /* SecondViewController.swift */; };
+		CEC905D9220B615100314A21 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC905D8220B615100314A21 /* SearchViewController.swift */; };
+		CEC905DB220B646F00314A21 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC905DA220B646F00314A21 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		CE13F7D32205DB120010517C /* BarButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE13F7D72205DB120010517C /* BarButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarButtonUITests.swift; sourceTree = "<group>"; };
 		CE13F7D92205DB120010517C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE13F7E52205E0120010517C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		CEC905D8220B615100314A21 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CEC905DA220B646F00314A21 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +105,10 @@
 			children = (
 				CE13F7B72205DB100010517C /* AppDelegate.swift */,
 				CE13F7B92205DB100010517C /* ViewController.swift */,
+				CEC905D8220B615100314A21 /* SearchViewController.swift */,
 				CE13F7BB2205DB100010517C /* Main.storyboard */,
+				CEC905DA220B646F00314A21 /* TableViewCell.swift */,
+				CE13F7E52205E0120010517C /* SecondViewController.swift */,
 				CE13F7BE2205DB110010517C /* Assets.xcassets */,
 				CE13F7C02205DB110010517C /* LaunchScreen.storyboard */,
 				CE13F7C32205DB110010517C /* Info.plist */,
@@ -256,7 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC905DB220B646F00314A21 /* TableViewCell.swift in Sources */,
+				CE13F7E62205E0120010517C /* SecondViewController.swift in Sources */,
 				CE13F7BA2205DB100010517C /* ViewController.swift in Sources */,
+				CEC905D9220B615100314A21 /* SearchViewController.swift in Sources */,
 				CE13F7B82205DB100010517C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

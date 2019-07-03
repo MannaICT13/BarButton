@@ -12,14 +12,53 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(tabButton))
+        
+        self.navigationItem.leftBarButtonItem = addButton
+       
     }
+    
+    
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+  
+    @IBAction func searchAction(_ sender: Any) {
+        performSegue(withIdentifier: "searchVC", sender: self)
     }
+    
+    @IBAction func nextAction(_ sender: Any) {
+        
+        performSegue(withIdentifier: "nextVC", sender: self)
+        
+        
+    }
+    
+    
 
+    @objc func tabButton(){
+   
+        let alert = UIAlertController(title: "Your Information", message: nil, preferredStyle: .alert)
+        
+        alert.addTextField { (textField) in
+            
+            textField.placeholder = "Enter your Name:"
+        }
+        alert.addTextField { (textField1) in
+            textField1.placeholder = "Enter Your Dept:"
+        }
+       
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+            print("Manna")
+        }
+        
+        alert.addAction(cancel)
+        
+        self.present(alert, animated: true, completion: nil)
+   
+        
+    
+    }
+    
 
 }
 
